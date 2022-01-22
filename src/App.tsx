@@ -1,14 +1,34 @@
 import { TicTacToe } from "./components/TicTacToe";
 import "./App.css";
+import { useState } from "react";
 
 function App() {
+  const randomizeInitialLetter = () => {
+    let data = ["X", "O"];
+    return data[Math.floor(Math.random() * data.length)];
+  };
+  const [letter, setLetter] = useState(randomizeInitialLetter());
+  const [values, setValues] = useState(Array(9).fill(""));
+  const [winner, setWinner] = useState(undefined);
+
+  const handleOnReset = () => {
+    setWinner(undefined)
+    setValues(Array(9).fill(""))
+  }
   return (
-    <div
-      id="app"
-      className="d-flex align-items-center flex-column text-center"
-    >
+    <div id="app">
       <h1>TicTacToe</h1>
-      <TicTacToe />
+      <h2 className="turn">
+        Player turn: <b>{letter}</b>
+      </h2>
+      <button onClick={handleOnReset}>Reset Game</button>
+      <TicTacToe
+        letter={letter}
+        setLetter={setLetter}
+        setWinner={setWinner}
+        values={values}
+        setValues={setValues}
+      />
       <h2>
         Made by{" "}
         <a
@@ -19,6 +39,11 @@ function App() {
           Gawi_
         </a>
       </h2>
+      {winner ? (
+        <h2 id="winner">
+          Player <b>{winner}</b> wins!
+        </h2>
+      ) : null}
     </div>
   );
 }
