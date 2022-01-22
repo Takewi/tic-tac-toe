@@ -1,0 +1,25 @@
+a {
+  text-decoration: none;
+  color: rebeccapurple;
+}
+a:hover {
+  color: rgb(217, 42, 233);
+}
+h2 {
+  margin-top: 10px;
+  font-size: 22px;
+  color: rebeccapurple;
+  font-weight: 550;
+  font-family: "Courier New", Courier, monospace;
+}
+h1 {
+  font-family: "Courier New", Courier, monospace;
+  color: rebeccapurple;
+  font-weight: 550;
+}
+#app {
+  background-color: rgba(187, 185, 185, 0.479);
+  width: 400px;
+  border-radius: 15px;
+  margin: 10px;
+}
