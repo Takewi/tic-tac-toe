@@ -10,16 +10,46 @@ h2 {
   font-size: 22px;
   color: rebeccapurple;
   font-weight: 550;
-  font-family: "Courier New", Courier, monospace;
 }
 h1 {
-  font-family: "Courier New", Courier, monospace;
   color: rebeccapurple;
   font-weight: 550;
+  margin-bottom: 0px;
 }
 #app {
+  font-family: "Courier New", Courier, monospace;
   background-color: rgba(187, 185, 185, 0.479);
   width: 400px;
+  min-height: 530px;
   border-radius: 15px;
   margin: 10px;
+  text-align: center;
+  align-items: center;
+}
+.turn {
+  margin: 0px;
+}
+b {
+  color: rgb(217, 42, 233);
+  font-size: 25px;
+}
+#winner {
+  border: 3px solid rebeccapurple;
+  text-align: center;
+  margin-bottom: 15px;
+  margin-left: 90px;
+  margin-right: 90px;
+}
+button {
+  color: rebeccapurple;
+  border: 2px solid rebeccapurple;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: none;
+  cursor: pointer;
+}
+button:hover{
+  color:rgb(240, 77, 255);
+  transform: scale(1.2);
 }
