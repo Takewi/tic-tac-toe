@@ -1,6 +1,6 @@
 # Tic-tac-toe made with React using Typescript template.
 
-## Status: Still in development 🏗️
+## Status: Finished ✔️
 
 ## Available Scripts & instaling dependencies
 
