@@ -16,6 +16,10 @@ h1 {
   font-weight: 550;
   margin-bottom: 0px;
 }
+.flex-center{
+  display: flex;
+  justify-content: center;
+}
 #app {
   font-family: "Courier New", Courier, monospace;
   background-color: rgba(187, 185, 185, 0.479);

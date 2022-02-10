@@ -1,19 +1,18 @@
 table {
- width: 100%;
- padding-left: 5%;
- padding-right: 5%;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 table td {
   border: 5px solid;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   text-align: center;
   color: rebeccapurple;
   font-size: 55px;
   font-weight: 550;
   cursor: pointer;
 }
-table td:hover{
+table td:hover {
   color: rgb(240, 77, 255);
   border-color: rebeccapurple;
 }

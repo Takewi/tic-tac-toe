@@ -12,9 +12,9 @@ function App() {
   const [winner, setWinner] = useState(undefined);
 
   const handleOnReset = () => {
-    setWinner(undefined)
-    setValues(Array(9).fill(""))
-  }
+    setWinner(undefined);
+    setValues(Array(9).fill(""));
+  };
   return (
     <div id="app">
       <h1>TicTacToe</h1>
@@ -22,13 +22,15 @@ function App() {
         Player turn: <b>{letter}</b>
       </h2>
       <button onClick={handleOnReset}>Reset Game</button>
-      <TicTacToe
-        letter={letter}
-        setLetter={setLetter}
-        setWinner={setWinner}
-        values={values}
-        setValues={setValues}
-      />
+      <div className="flex-center">
+        <TicTacToe
+          letter={letter}
+          setLetter={setLetter}
+          setWinner={setWinner}
+          values={values}
+          setValues={setValues}
+        />
+      </div>
       <h2>
         Made by{" "}
         <a
